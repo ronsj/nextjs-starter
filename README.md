@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) starter template that includes:
+
+- [TypeScript](https://nextjs.org/docs/basic-features/typescript)
+- [Prettier](https://nextjs.org/docs/basic-features/eslint#prettier)
+- [lint-staged](https://nextjs.org/docs/basic-features/eslint#lint-staged) with [Husky](https://github.com/typicode/husky)
+
+## Setup
+```bash
+npx create-next-app@latest --example https://github.com/ronsj/nextjs-starter-basic
+```
 
 ## Getting Started
 
