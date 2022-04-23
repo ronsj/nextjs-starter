@@ -7,6 +7,7 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
+    "test:e2e": "playwright test",
     "check-updates": "npx npm-check-updates"
   },
   "dependencies": {
