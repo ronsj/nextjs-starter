@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  swcMinify: true,
   eslint: {
     /**
      *  Only run ESLint on the 'src' directory during production builds (next build)
@@ -9,6 +10,10 @@ const nextConfig = {
      *
      */
     dirs: ['src'],
+  },
+  experimental: {
+    concurrentFeatures: true,
+    serverComponents: true,
   },
 }
 
