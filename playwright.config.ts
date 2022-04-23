@@ -1,5 +1,6 @@
 import type { PlaywrightTestConfig } from '@playwright/test'
 import { devices } from '@playwright/test'
+import path from 'path'
 
 /**
  *  Next.js Docs - Playwright
@@ -16,7 +17,7 @@ import { devices } from '@playwright/test'
  * See https://playwright.dev/docs/test-configuration.
  */
 const config: PlaywrightTestConfig = {
-  testDir: './src/e2e',
+  testDir: path.join(__dirname, 'src/e2e'),
   /* Maximum time one test can run for. */
   timeout: 30 * 1000,
   expect: {
@@ -26,14 +27,27 @@ const config: PlaywrightTestConfig = {
      */
     timeout: 5000,
   },
-  /* Fail the build on CI if you accidentally left test.only in the source code. */
-  forbidOnly: !!process.env.CI,
+  // /* Fail the build on CI if you accidentally left test.only in the source code. */
+  // forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries: process.env.CI ? 2 : 0,
+  // retries: process.env.CI ? 2 : 0,
+  retries: 2,
   /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
-  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  // workers: process.env.CI ? 1 : undefined,
+  // /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+  // reporter: 'html',
+  // Artifacts folder where screenshots, videos, and traces are stored.
+  outputDir: 'test-results/',
+
+  // Run your local dev server before starting the tests:
+  // https://playwright.dev/docs/test-advanced#launching-a-development-web-server-during-the-tests
+  webServer: {
+    command: 'npm run dev',
+    port: 3000,
+    timeout: 120 * 1000,
+    reuseExistingServer: !process.env.CI,
+  },
+
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
