@@ -1,8 +1,8 @@
 This is a [Next.js](https://nextjs.org/) starter template that includes:
 
-- [TypeScript](https://nextjs.org/docs/basic-features/typescript)
+- [TypeScript](https://nextjs.org/docs/basic-features/typescript).
 - [Prettier](https://nextjs.org/docs/basic-features/eslint#prettier) for formatting.
-- [lint-staged](https://nextjs.org/docs/basic-features/eslint#lint-staged) with [Husky](https://github.com/typicode/husky)
+- [lint-staged](https://nextjs.org/docs/basic-features/eslint#lint-staged) with [Husky](https://github.com/typicode/husky).
 - [Playwright](https://playwright.dev/) for E2E and integration tests.
 
 ## Setup
