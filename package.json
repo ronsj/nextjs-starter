@@ -7,6 +7,9 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
+    "test": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --ci",
     "test:e2e": "playwright test",
     "check-updates": "npx npm-check-updates"
   },
@@ -16,13 +19,19 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
+    "@jest/types": "^28.0.2",
     "@playwright/test": "^1.21.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.2.0",
     "@types/node": "17.0.25",
     "@types/react": "18.0.6",
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.5",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-testing-library": "^5.3.1",
     "husky": "^7.0.4",
+    "jest": "^28.0.3",
+    "jest-environment-jsdom": "^28.0.2",
     "lint-staged": "^12.4.0",
     "prettier": "^2.6.2",
     "typescript": "4.6.3"
