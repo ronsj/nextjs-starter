@@ -1,9 +1,14 @@
 This is a [Next.js](https://nextjs.org/) starter template that includes:
 
-- [TypeScript](https://nextjs.org/docs/basic-features/typescript).
-- [Prettier](https://nextjs.org/docs/basic-features/eslint#prettier) for formatting.
-- [lint-staged](https://nextjs.org/docs/basic-features/eslint#lint-staged) with [Husky](https://github.com/typicode/husky).
-- [Playwright](https://playwright.dev/) for E2E and integration tests.
+- [TypeScript](https://nextjs.org/docs/basic-features/typescript)
+- [Prettier](https://nextjs.org/docs/basic-features/eslint#prettier)
+- [lint-staged](https://nextjs.org/docs/basic-features/eslint#lint-staged)
+- [Husky](https://github.com/typicode/husky)
+> You can use Husky to lint your commit messages, run tests, lint code, etc... when you commit or push.
+- [Playwright](https://nextjs.org/docs/testing#playwright)
+> Playwright is a testing framework that lets you automate Chromium, Firefox, and WebKit with a single API. You can use it to write End-to-End (E2E) and Integration tests across all platforms.
+- [Jest & Testing Library](https://nextjs.org/docs/testing#jest-and-react-testing-library)
+> Jest and React Testing Library are used together for Unit Testing.
 
 ## Setup
 ```bash
