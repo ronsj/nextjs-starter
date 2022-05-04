@@ -1,13 +1,18 @@
+# Next.js Starter
+
 This is a [Next.js](https://nextjs.org/) starter template that includes:
 
-- [TypeScript](https://nextjs.org/docs/basic-features/typescript)
-- [Prettier](https://nextjs.org/docs/basic-features/eslint#prettier)
-- [lint-staged](https://nextjs.org/docs/basic-features/eslint#lint-staged)
-- [Husky](https://github.com/typicode/husky)
+### [TypeScript](https://nextjs.org/docs/basic-features/typescript)
+> TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor. Catch errors early in your editor.
+### [Prettier](https://nextjs.org/docs/basic-Pfeatures/eslint#prettier)
+> Code formatter
+### [lint-staged](https://nextjs.org/docs/basic-features/eslint#lint-staged)
+> Run the linter on staged git files
+### [Husky](https://github.com/typicode/husky)
 > You can use Husky to lint your commit messages, run tests, lint code, etc... when you commit or push.
-- [Playwright](https://nextjs.org/docs/testing#playwright)
+### [Playwright](https://nextjs.org/docs/testing#playwright)
 > Playwright is a testing framework that lets you automate Chromium, Firefox, and WebKit with a single API. You can use it to write End-to-End (E2E) and Integration tests across all platforms.
-- [Jest & Testing Library](https://nextjs.org/docs/testing#jest-and-react-testing-library)
+### [Jest & Testing Library](https://nextjs.org/docs/testing#jest-and-react-testing-library)
 > Jest and React Testing Library are used together for Unit Testing.
 
 ## Setup
