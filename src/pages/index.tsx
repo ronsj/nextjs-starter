@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import Greeting from '@/src/components/Greeting'
 import styles from '../styles/Home.module.css'
 
 // ! Next.js + React 18 Hydration Error:
@@ -17,6 +18,8 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome!</h1>
+
+        <Greeting />
 
         <div>
           <Link href="/about">

@@ -20,6 +20,9 @@ const customJestConfig = {
     '!src/**/*.spec.{ts,tsx,js,jsx}',
     '!src/**/*.stories.{ts,tsx,js,jsx}',
   ],
+  moduleNameMapper: {
+    '^@/src/(.*)$': '<rootDir>/src/$1',
+  },
 }
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
