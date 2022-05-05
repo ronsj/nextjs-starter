@@ -11,6 +11,8 @@
     "test:coverage": "jest --coverage",
     "test:ci": "jest --ci --coverage --maxWorkers=2",
     "test:e2e": "playwright test",
+    "stories": "ladle serve",
+    "stories:build": "ladle build",
     "check-updates": "npx npm-check-updates"
   },
   "dependencies": {
@@ -20,6 +22,7 @@
   },
   "devDependencies": {
     "@jest/types": "^28.0.2",
+    "@ladle/react": "^0.15.0",
     "@playwright/test": "^1.21.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
