@@ -14,6 +14,8 @@ Lint commit messages, run tests, lint code, etc... when you commit or push.
 Playwright is a testing framework that lets you automate Chromium, Firefox, and WebKit with a single API. You can use it to write End-to-End (E2E) and Integration tests across all platforms.
 ### [Jest & Testing Library](https://nextjs.org/docs/testing#jest-and-react-testing-library)
 Jest and React Testing Library are used together for Unit Testing.
+### [Ladle](https://ladle.dev)
+A lighter [Storybook](https://storybook.js.org/) alternative for writing component stories.
 
 ## Setup
 With NPM:
